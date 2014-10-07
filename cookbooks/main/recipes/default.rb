@@ -115,8 +115,8 @@
 # if ['solo','db_master', 'db_slave'].include?(node[:instance_role])
   # Extensions that support Postgres >= 9.0
   # postgresql9_autoexplain "dbname"
-  postgresql9_btree_gin "dbname"
-  postgresql9_btree_gist "dbname"
+  postgresql9_btree_gin "osmoseserver"
+  postgresql9_btree_gist "osmoseserver"
   # postgresql9_chkpass "dbname"
   # postgresql9_citext "dbname"
   # postgresql9_cube "dbname"
@@ -125,7 +125,7 @@
   # postgresql9_dict_xsyn "dbname"
   # postgresql9_earthdistance "dbname"
   # postgresql9_fuzzystrmatch "dbname"
-  postgresql9_hstore "dbname"
+  postgresql9_hstore "osmoseserver"
   # postgresql9_intarray "dbname"
   # postgresql9_isn "dbname"
   # postgresql9_lo "dbname"
