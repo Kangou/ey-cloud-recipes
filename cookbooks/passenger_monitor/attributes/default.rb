@@ -1,6 +1,6 @@
 default[:passenger_monitor4] = {
   # your EY Cloud application name
-  :app_name => "myapp",
+  :app_name => "osmoseserver",
 
   # passenger worker memory limit, in MB
   :memory_limit => 300,

@@ -1,3 +1,6 @@
+# See https://github.com/engineyard/ey-cloud-recipes/tree/master/cookbooks/passenger_monitor/README.md
+include_recipe 'passenger_monitor'
+
 # uncomment to use a custom database.yml configuration
 # include_recipe "database_yml_custom"
 
