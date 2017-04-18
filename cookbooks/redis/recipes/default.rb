@@ -9,8 +9,9 @@ redis_url = "http://download.redis.io/releases/redis-#{redis_version}.tar.gz"
 redis_installer_directory = '/opt/redis-source'
 bin_path = '/usr/local/bin'
 
-if ['util'].include?(node[:instance_role])
-  if node[:name] == node[:redis][:utility_name]
+if db_master? || if ['solo'].include?(node[:instance_role])
+#if ['util'].include?(node[:instance_role])
+#  if node[:name] == node[:redis][:utility_name]
 
     sysctl "Enable Overcommit Memory" do
       variables 'vm.overcommit_memory' => 1
@@ -89,7 +90,7 @@ if ['util'].include?(node[:instance_role])
     execute "monit reload" do
       action :run
     end
-  end
+#  end
 end
 
 if ['solo', 'app', 'app_master', 'util'].include?(node[:instance_role])
