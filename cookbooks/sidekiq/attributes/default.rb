@@ -24,6 +24,9 @@ default[:sidekiq] = {
 	:mailers => 1,
 	:json => 1,
   },
+
+  # Memory limit
+  :worker_memory => 700, # MB
   
   # Verbose
   :verbose => false,
