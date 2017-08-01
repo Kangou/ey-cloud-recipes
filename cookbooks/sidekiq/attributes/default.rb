@@ -20,8 +20,8 @@ default[:sidekiq] = {
   :queues => {
     # :queue_name => priority
     :default => 1,
-	:import_export => 1,
-	:mailers => 1,
+	:import_export => 2,
+	:mailers => 2,
 	:json => 1,
   },
 
