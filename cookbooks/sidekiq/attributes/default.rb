@@ -26,7 +26,7 @@ default[:sidekiq] = {
   },
 
   # Memory limit
-  :worker_memory => 700, # MB
+  :worker_memory => 1024, # MB
   
   # Verbose
   :verbose => false,
